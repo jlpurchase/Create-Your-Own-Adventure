@@ -1,0 +1,59 @@
+.heading {
+    font-family:'Sedgwick Ave', cursive;
+}
+
+.p {
+    font-family:'Raleway', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.break{
+    padding-top: 15px;
+}
+
+#scifiIntro {
+    text-align: center;
+    position: inline-block;
+    font-family:'Sedgwick Ave', cursive;
+}
+
+#prehistoricIntro {
+    text-align: center;
+    position: inline-block;
+    font-family:'Sedgwick Ave', cursive;
+}
+
+#magicIntro {
+    text-align: center;
+    position: inline-block;
+    font-family:'Sedgwick Ave', cursive;
+}
+
+
+#myForm {
+    position: inline-block;
+    font-family:'Raleway', sans-serif;
+}
+
+.button {
+    position: inline-block;
+    font-family:'Raleway', sans-serif;
+    background-color: #1743BB;
+    color: white;
+    border-radius: 6px;
+    border: none;   
+    padding: 8px;
+}
+
+.buttonDiv {
+    padding: 15px;
+}
+
+.answerChoices {
+    position: block;
+    text-align: center;
+    font-family:'Sedgwick Ave', cursive;
+}
