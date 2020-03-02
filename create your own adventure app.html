@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<created by JLP></created>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,36 +6,59 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway|Sedgwick+Ave&display=swap" rel="stylesheet">
-               
-
-<style>
-.heading {
-    font-family:'Sedgwick Ave', cursive;
-}
-
-.p {
-    font-family:'Raleway', sans-serif;
-}
-
-</style>
-
-
+        <link rel="stylesheet" href="styles.css">
 <body>
 
 <h1 class="heading">Create Your Adventure</h1>
+
 <p class="p">Directions: to create your very own adventure you must select an option at each juncture. Once you have made a selection, the next section of the story will appear.</p>
+
 <br>
+
 <p class="p">Select a genre</p>
-<form>
-    <input type="radio" name="genre" value="Scifi"> Scifi
-    <input type="radio" name="genre" value="Prehistoric"> Prehistoric
-    <input type="radio" name="genre" value="Magic"> Magic
+
+<form id="myForm">
+    <label for="_intro1">
+    <input type="radio" id="_intro1" name="genre" value="scifiIntro" onclick="startGame()"> Scifi</label>
+    <label for="_intro2">
+    <input type="radio" id="_intro2" name="genre" value="prehistoricIntro" onclick="startGame()"> DINOSAUR </label>
+    <label for="_intro3">
+    <input type="radio" id="_intro3" name="genre" value="magicIntro" onclick="startGame()"> Magic </label>
 </form> 
 
-<p id="scifiIntro">Scifi intro piece</p>
-<p id="prehistoricIntro">DINOSAURS intro</p>
-<p id="magicIntro">Magic intro piece</p>
+<div id="scifiIntro"class="hidden break" >As a child you dreamt of traveling to distant planets to find a home far away from your family and memories. When you were a teen you began tinkering with extra parts and salvaged metal to learn vehicle mechanics. At school you focused on math and science. However, you did not master these subjects and were not admitted to the space exploration academy.  </div>
+<div id="prehistoricIntro"class="hidden break">Loud rumblings echo through your home valley. Leaves fall, water ripples, and smoke begins to appear from a nearby volcano. You and your herd have lived here your entire life but have never seen or heard this before. During times of crisis all of the diplodocus meet at the edge of the river. When you arrive, you notice several members missing. </div>
+<div id="magicIntro"class="hidden break">Walking through the rainforest towards your friend’s home, you notice the faint scent of smoke and hear a quiet melodic chanting. Mesmerized, you follow the sound and smell to find a woman shuffling around a fire. A fire—in the middle of the rainforest—leaves you baffled. As she waves small bunch of dried plants over the fire, the flames take on a purple glow and the smoke turns turquoise. Her quiet chanting begins to grow as she moves around the fire. </div>
 
+<br>
+    <form id="buttonChoice1">
+       
+    <input type="button" name="button1" class="safe button hidden" id="safe1" value="safe" onclick="displayButtons1Text(event)">
+    <br>
+    <text id="scifiSafe1" name="scifiText1" class="hidden">Scifi 1</text>
+    <text id="prehistoricSafe1" class="hidden">Dinosaurs1</text>
+    <text id="magicSafe1" class="hidden">Magic1</text>
+    <br>
+
+    <input type="button" name="button1" class="neutral button hidden" id="neutral1" value="neutral" onclick="displayButtons1Text(event)">
+    <br>
+    <text id="scifiNeutral1" class="hidden" name="scifiText1">Scifi 1</text>
+    <text id="prehistoricNeutral1" class="hidden">Dinosaurs1</text>
+    <text id="magicNeutral1" class="hidden">Magic1</text>
+    <br>
+    
+    <input type="button" name="button1" class="risk button hidden" id="risk1" value="risk" onclick="displayButtons1Text(event)">
+    <br>
+    <text id="scifiRisk1" class="hidden" name="scifiText1">Scifi 1</text>
+    <text id="prehistoricRisk1" class="hidden">Dinosaurs1</text>
+    <text id="magicRisk1" class="hidden">Magic1</text>
+    
+</form>
+
+<br>
+<br>
+
+<script src="./create your own adventure app.js"></script>
 </body>
         
 </html>
